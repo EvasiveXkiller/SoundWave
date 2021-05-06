@@ -127,7 +127,7 @@ Changes the volume of SoundWave
 
 `aliases: seek, goto`
 
-Seeks to the position of the song, timecode accepts and MM:SS formats
+Seeks to the position of the song, timecode accepts `seconds` and `MM:SS` formats
 
 ### remove
 
@@ -181,4 +181,5 @@ A link that you can invite SoundWave to another server
 
 Searches for lyrics on the provided text, if none is provided then SoundWave will attempt to search from the current
 playing song
+
 
