@@ -173,12 +173,6 @@ Move a set of tracks to the specified new position
 
 A link that you can invite SoundWave to another server
 
-### invite
-
-`aliases: invite`
-
-A link that you can invite SoundWave to another server
-
 ### lyrics
 
 `=lyrics [?querytext]`
