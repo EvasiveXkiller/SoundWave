@@ -218,6 +218,8 @@ vaporwave
 nightcore
 echo
 reverb
+reset
+clear
 ```
 
 ### Links
