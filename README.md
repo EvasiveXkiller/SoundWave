@@ -4,6 +4,7 @@
 
 ### Soundwave v3.1
 - Autoplay feature (command list for more details)
+- More effects are now supported!
 - Effects are implemented now! (Check the command list for more details)
 - Added new command `pd`
 - Major optimizations on server code
