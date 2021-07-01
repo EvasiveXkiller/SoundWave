@@ -2,12 +2,12 @@
 
 > A music bot focused on efficiency
 
-### Soundwave v3
+### Soundwave v3.1
+- Autoplay feature (command list for more details)
 - Effects are implemented now! (Check the command list for more details)
 - Added new command `pd`
 - Major optimizations on server code
 - Any issues please let the developer know.
-- Discord server coming soon.
 
 ## Commands
 
@@ -20,6 +20,7 @@ All commands need to be prefixed with `=`
 - [queue](#queue)
 - [join](#join)
 - [leave](#leave)
+- [autoplay(NEW!)](#autoplay)
 - [search](#search)
 - [skip](#skip)
 - [stop](#stop)
@@ -36,7 +37,7 @@ All commands need to be prefixed with `=`
 - [moverange](#moverange)
 - [invite](#invite)
 - [lyrics](#lyrics)
-- [effects](#effects)
+- [effects(NEW!)](#effects)
 
 <hr>
 
@@ -85,6 +86,12 @@ Instructs SoundWave to join the channel
 `aliases: leave, dc, goaway`
 
 Instructs SoundWave to leave the channel
+
+### autoplay
+
+`aliases: autoplay, ap`
+
+Turns on autoplay mode. If the last song is not a searchable song, it will fail to turn on.
 
 ### search
 
@@ -211,6 +218,7 @@ Side note: Using effects on live songs might cause out of sync issues.
 
 Currently supported effects:
 ```
+tremolo
 bassboost
 subboost
 8d
@@ -218,12 +226,13 @@ vaporwave
 nightcore
 echo
 reverb
-reset
-clear
+flanger
+chorus
 ```
 
 ### Links
 SoundWave Website: [here](https://evasivexkiller.wixsite.com/website/soundwave)
+
 
 
 
