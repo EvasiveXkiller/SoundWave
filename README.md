@@ -4,6 +4,7 @@
 
 ### Soundwave v3.1
 - Autoplay feature (command list for more details)
+- Discord Server is here! [Link](https://discord.gg/d62ZWkVUet)
 - More effects are now supported!
 - Effects are implemented now! (Check the command list for more details)
 - Added new command `pd`
