@@ -4,8 +4,6 @@
 
 ### Soundwave v3.1
 - Autoplay feature (command list for more details)
-- Discord Server is here! [Link](https://discord.gg/d62ZWkVUet)
-- More effects are now supported!
 - Effects are implemented now! (Check the command list for more details)
 - Added new command `pd`
 - Major optimizations on server code
@@ -27,6 +25,7 @@ All commands need to be prefixed with `=`
 - [skip](#skip)
 - [stop](#stop)
 - [shuffle](#shuffle)
+- [repeat](#repeat)
 - [repeattrack](#repeattrack)
 - [repeatqueue](#repeatqueue)
 - [player](#player)
@@ -121,9 +120,15 @@ Stops the player and deletes the queue
 
 Shuffles the queue if there is enough songs
 
+### repeat
+
+`aliases: repeat, loop`
+
+Toggles through all the different loop modes.
+
 ### repeattrack
 
-`aliases: repeattrack, repeatt, repeatsong, repeatthis, loopt, lt, looptrack, loopsong, lc`
+`aliases: repeattrack, repeatt, replay, repeatsong, repeatthis, loopt, lt, looptrack, loopsong, lc`
 
 Repeats the current track only
 
