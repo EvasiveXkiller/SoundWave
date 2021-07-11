@@ -2,10 +2,10 @@
 
 > A music bot focused on efficiency
 
-### Soundwave v3.1
+### Soundwave v3.3
 - Autoplay feature (command list for more details)
 - Effects are implemented now! (Check the command list for more details)
-- Added new command `pd`
+- Added new command `fix`
 - Major optimizations on server code
 - Any issues please let the developer know.
 
@@ -39,6 +39,7 @@ All commands need to be prefixed with `=`
 - [invite](#invite)
 - [lyrics](#lyrics)
 - [effects(NEW!)](#effects)
+- [fix(NEW!)](#fix)
 
 <hr>
 
@@ -212,6 +213,14 @@ A link that you can invite SoundWave to another server
 
 Searches for lyrics on the provided text, if none is provided then SoundWave will attempt to search from the current
 playing song
+
+### fix
+
+`=fix`
+
+`aliases: fix`
+
+Restarts the current instance of the player, to solve issues that are related to player not starting.
 
 ### Effects
 
