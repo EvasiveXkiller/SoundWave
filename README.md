@@ -163,11 +163,15 @@ Seeks to the position of the song, timecode accepts `seconds` and `MM:SS` format
 
 ### remove
 
-`=remove [index]`
+`=remove [index, index2?...]`
 
 `aliases: remove, delete, r`
 
-Removes the song from the queue
+Examples:
+`=remove 2`
+`=remove 5 7 8 9`
+
+Removes the song from the queue. Can take multiple songs
 
 ### prune
 
