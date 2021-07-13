@@ -1,5 +1,6 @@
 # SoundWave
-
+[![lint](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml/badge.svg)](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml)
+[![spellcheck](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml)
 > A music bot focused on efficiency
 
 ### Soundwave v3.3
