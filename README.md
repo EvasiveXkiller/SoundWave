@@ -1,14 +1,18 @@
 # SoundWave
+
 [![lint](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml/badge.svg)](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml)
 [![spellcheck](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml)
 > A music bot focused on efficiency
 
-### Soundwave v3.3
-- Autoplay feature (command list for more details)
-- Effects are implemented now! (Check the command list for more details)
-- Added new command `fix`
-- Major optimizations on server code
-- Any issues please let the developer know.
+## Announcements
+
+If the music stops playing there is a `fix` command that will attempt to fix it. Please see below for more info
+
+### Soundwave v3.4
+- Prefix can now be changed! Use `=prefix` to change. More below
+- Soundwave now streams up to 320kbps, if the source origin can handle it.
+
+View more at [changelog](#changelog)
 
 ## Commands
 
@@ -21,7 +25,7 @@ All commands need to be prefixed with `=`
 - [queue](#queue)
 - [join](#join)
 - [leave](#leave)
-- [autoplay(NEW!)](#autoplay)
+- [autoplay](#autoplay)
 - [search](#search)
 - [skip](#skip)
 - [stop](#stop)
@@ -39,8 +43,9 @@ All commands need to be prefixed with `=`
 - [moverange](#moverange)
 - [invite](#invite)
 - [lyrics](#lyrics)
-- [effects(NEW!)](#effects)
-- [fix(NEW!)](#fix)
+- [effects](#effects)
+- [fix](#fix)
+- [prefix](#prefix)
 
 <hr>
 
@@ -227,6 +232,13 @@ playing song
 
 Restarts the current instance of the player, to solve issues that are related to player not starting.
 
+### prefix
+
+`=prefix [prefix]`
+
+Changes the bot's prefix to another symbol. If you somehow lost control of the bot, Remove the bot from the server then
+re-adding will reset the bot's prefix to its initial state, which is `=`
+
 ### Effects
 
 `=effects [effectname]`
@@ -238,6 +250,7 @@ Add effects to the current playing song.
 Side note: Using effects on live songs might cause out of sync issues.
 
 Currently supported effects:
+
 ```
 tremolo
 bassboost
@@ -251,9 +264,16 @@ flanger
 chorus
 ```
 
+# Changelog
+
+#### SoundWave 3.3 Updates
+
+- Autoplay feature (command list for more details)
+- Effects are implemented now! (Check the command list for more details)
+- Added new command `fix`
+- Major optimizations on server code
+- Any issues please let the developer know.
+
 ### Links
+
 SoundWave Website: [here](https://evasivexkiller.wixsite.com/website/soundwave)
-
-
-
-
