@@ -9,8 +9,12 @@
 If the music stops playing there is a `fix` command that will attempt to fix it. Please see below for more info
 
 ### Soundwave v3.4
+- Slash Commands are now implemented!
 - Prefix can now be changed! Use `=prefix` to change. More below
 - Soundwave now streams up to 320kbps, if the source origin can handle it.
+
+Stuff that is fixed
+- moverange command throwing error
 
 View more at [changelog](#changelog)
 
@@ -45,7 +49,7 @@ All commands need to be prefixed with `=`
 - [lyrics](#lyrics)
 - [effects](#effects)
 - [fix](#fix)
-- [prefix](#prefix)
+- [prefix(NEW!)](#prefix)
 
 <hr>
 
@@ -277,3 +281,7 @@ chorus
 ### Links
 
 SoundWave Website: [here](https://evasivexkiller.wixsite.com/website/soundwave)
+
+
+
+
