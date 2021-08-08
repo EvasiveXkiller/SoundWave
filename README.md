@@ -8,19 +8,24 @@
 
 If the music stops playing there is a `fix` command that will attempt to fix it. Please see below for more info
 
+SoundWave is currently transitioning to the new Discord API, updates will be less frequent for now.
+Bugs will still be fixed shall it deemed necessary.
+For more info, the [Discord Server](https://discord.gg/d62ZWkVUet)
 ### Soundwave v3.4
 - Slash Commands are now implemented!
+- New command `=jump` Check below for info
 - Prefix can now be changed! Use `=prefix` to change. More below
 - Soundwave now streams up to 320kbps, if the source origin can handle it.
 
 Stuff that is fixed
 - moverange command throwing error
+- Race condition when searching is semi fixed
 
 View more at [changelog](#changelog)
 
 ## Commands
 
-All commands need to be prefixed with `=`
+All commands need to be prefixed with `=` or the prefix of the server
 
 - [play](#play)
 - [playdirect](#playdirect)
@@ -32,6 +37,7 @@ All commands need to be prefixed with `=`
 - [autoplay](#autoplay)
 - [search](#search)
 - [skip](#skip)
+- [jump](#jump)
 - [stop](#stop)
 - [shuffle](#shuffle)
 - [repeat](#repeat)
@@ -83,7 +89,7 @@ Resumes the player
 
 ### queue
 
-`aliases: q, queue`
+`aliases: q, queue, list`
 
 Display the queue for the current server
 
@@ -118,6 +124,12 @@ Searches the term given and provides an interface to play the song.
 `aliases: skip, next, sk`
 
 Skips the current song and plays the next song.
+
+### jump
+
+`aliases: jump`
+
+Jumps to the specified track and removes all the previous entries
 
 ### stop
 
@@ -223,7 +235,7 @@ A link that you can invite SoundWave to another server
 
 `=lyrics [?querytext]`
 
-`aliases: invite`
+`aliases: lyrics, lyric`
 
 Searches for lyrics on the provided text, if none is provided then SoundWave will attempt to search from the current
 playing song
