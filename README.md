@@ -6,20 +6,15 @@
 
 ## Announcements
 
+SoundWave has successfully transitioned to Discord V9 API, there might be bugs so please do report if there is any.
+
 If the music stops playing there is a `fix` command that will attempt to fix it. Please see below for more info
 
-SoundWave is currently transitioning to the new Discord API, updates will be less frequent for now.
-Bugs will still be fixed shall it deemed necessary.
-For more info, the [Discord Server](https://discord.gg/d62ZWkVUet)
-### Soundwave v3.4
-- Slash Commands are now implemented!
-- New command `=jump` Check below for info
-- Prefix can now be changed! Use `=prefix` to change. More below
-- Soundwave now streams up to 320kbps, if the source origin can handle it.
+For more info, join the [Discord Server](https://discord.gg/d62ZWkVUet)
 
-Stuff that is fixed
-- moverange command throwing error
-- Race condition when searching is semi fixed
+### Soundwave 4.0.0
+- Migrated to Discord V9 API
+- Much more stable queue processing mechanism
 
 View more at [changelog](#changelog)
 
@@ -282,6 +277,16 @@ chorus
 
 # Changelog
 
+### Soundwave v3.4
+- Slash Commands are now implemented!
+- New command `=jump` Check below for info
+- Prefix can now be changed! Use `=prefix` to change. More below
+- Soundwave now streams up to 320kbps, if the source origin can handle it.
+
+Stuff that is fixed
+- moverange command throwing error
+- Race condition when searching is semi fixed
+
 #### SoundWave 3.3 Updates
 
 - Autoplay feature (command list for more details)
@@ -291,6 +296,7 @@ chorus
 - Any issues please let the developer know.
 
 ### Links
+[Discord Server](https://discord.gg/d62ZWkVUet)
 
 SoundWave Website: [here](https://evasivexkiller.wixsite.com/website/soundwave)
 
