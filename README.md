@@ -1,20 +1,28 @@
-# SoundWave
-
-[![lint](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml/badge.svg)](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml)
-[![spellcheck](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml)
-> A music bot focused on efficiency
+<div align="center">
+  <br />
+  <p>
+    <a href="https://evasivexkiller.wixsite.com/website/soundwave"><img src="https://raw.githubusercontent.com/EvasiveXkiller/SoundWave/main/static/logo.svg" alt="Soundwave" width="800"/></a>
+  </p>
+  <br />
+  <p>
+    <a href="https://discord.gg/d62ZWkVUet"><img src="https://img.shields.io/discord/860347110163873842?color=5865F2&label=Discord%20Server&logo=Discord&logoColor=white" alt="Discord server" /></a>
+    <img src="https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml/badge.svg" alt="spell check" />
+    <img src="https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml/badge.svg" alt="lint check" />
+    <a href="https://evasivexkiller.wixsite.com/website/donate"><img src="https://img.shields.io/badge/donate-website-F96854.svg" alt="donate" /></a>
+  </p>
+</div>
 
 ## Announcements
 
 SoundWave has successfully transitioned to Discord V9 API, there might be bugs so please do report if there is any.
 
-If the music stops playing there is a `fix` command that will attempt to fix it. Please see below for more info
-
 For more info, join the [Discord Server](https://discord.gg/d62ZWkVUet)
 
-### Soundwave 4.0.0
-- Migrated to Discord V9 API
-- Much more stable queue processing mechanism
+### SoundWave 4.1.0
+- Unified Engine has been upgraded to v6
+- `fix` command has been depreciated
+- Max searchable songs inside a playlist has been increased to 1.5k
+- Permission checks has been updated
 
 View more at [changelog](#changelog)
 
@@ -277,6 +285,10 @@ chorus
 
 # Changelog
 
+### Soundwave 4.0.0
+- Migrated to Discord V9 API
+- Much more stable queue processing mechanism
+
 ### Soundwave v3.4
 - Slash Commands are now implemented!
 - New command `=jump` Check below for info
@@ -287,7 +299,7 @@ Stuff that is fixed
 - moverange command throwing error
 - Race condition when searching is semi fixed
 
-#### SoundWave 3.3 Updates
+#### SoundWave 3.3
 
 - Autoplay feature (command list for more details)
 - Effects are implemented now! (Check the command list for more details)
@@ -300,6 +312,12 @@ Stuff that is fixed
 
 SoundWave Website: [here](https://evasivexkiller.wixsite.com/website/soundwave)
 
+[Top.gg](https://top.gg/bot/815565837200261131)
 
+[Discord List Space](https://discordlist.space/bot/815565837200261131)
 
+[Discord boats](https://discord.boats/bot/815565837200261131)
 
+<div>
+<a href="https://discordbotlist.com/bots/815565837200261131"><img src="https://discordbotlist.com/api/v1/bots/815565837200261131/widget" alt="discord list space"></a>
+</div>
