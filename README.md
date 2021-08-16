@@ -6,8 +6,6 @@
   <br />
   <p>
     <a href="https://discord.gg/d62ZWkVUet"><img src="https://img.shields.io/discord/860347110163873842?color=5865F2&label=Discord%20Server&logo=Discord&logoColor=white" alt="Discord server" /></a>
-    <img src="https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/spellcheck.yml/badge.svg" alt="spell check" />
-    <img src="https://github.com/EvasiveXkiller/SoundWave-dev/actions/workflows/lint.yml/badge.svg" alt="lint check" />
     <a href="https://evasivexkiller.wixsite.com/website/donate"><img src="https://img.shields.io/badge/donate-website-F96854.svg" alt="donate" /></a>
   </p>
 </div>
@@ -19,6 +17,7 @@ SoundWave has successfully transitioned to Discord V9 API, there might be bugs s
 For more info, join the [Discord Server](https://discord.gg/d62ZWkVUet)
 
 ### SoundWave 4.1.0
+
 - Unified Engine has been upgraded to v6
 - `fix` command has been depreciated
 - Max searchable songs inside a playlist has been increased to 1.5k
@@ -286,16 +285,19 @@ chorus
 # Changelog
 
 ### Soundwave 4.0.0
+
 - Migrated to Discord V9 API
 - Much more stable queue processing mechanism
 
 ### Soundwave v3.4
+
 - Slash Commands are now implemented!
 - New command `=jump` Check below for info
 - Prefix can now be changed! Use `=prefix` to change. More below
 - Soundwave now streams up to 320kbps, if the source origin can handle it.
 
 Stuff that is fixed
+
 - moverange command throwing error
 - Race condition when searching is semi fixed
 
@@ -308,6 +310,7 @@ Stuff that is fixed
 - Any issues please let the developer know.
 
 ### Links
+
 [Discord Server](https://discord.gg/d62ZWkVUet)
 
 SoundWave Website: [here](https://evasivexkiller.wixsite.com/website/soundwave)
