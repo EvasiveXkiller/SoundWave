@@ -16,12 +16,14 @@ SoundWave has successfully transitioned to Discord V9 API, there might be bugs s
 
 For more info, join the [Discord Server](https://discord.gg/d62ZWkVUet)
 
-### SoundWave 4.1.0
+### SoundWave 4.2.0
 
-- Unified Engine has been upgraded to v6
-- `fix` command has been depreciated
-- Max searchable songs inside a playlist has been increased to 1.5k
-- Permission checks has been updated
+- `play` command can take arguments now. Check below for syntax errors.
+- `search` now identifies the correct user that requested the song
+
+Things that are fixed
+
+- Permission checks are now all modern (hopefully)
 
 View more at [changelog](#changelog)
 
@@ -29,7 +31,7 @@ View more at [changelog](#changelog)
 
 All commands need to be prefixed with `=` or the prefix of the server
 
-- [play](#play)
+- [play(NEW!)](#play)
 - [playdirect](#playdirect)
 - [pause](#pause)
 - [resume](#resume)
@@ -57,17 +59,36 @@ All commands need to be prefixed with `=` or the prefix of the server
 - [lyrics](#lyrics)
 - [effects](#effects)
 - [fix](#fix)
-- [prefix(NEW!)](#prefix)
+- [prefix](#prefix)
 
 <hr>
 
 ### play
 
-`=play [link / attached file / query]`
+`=play [link / attached file / query] [...args?]`
 
 `aliases: p, play`
 
-Command that is used to play a new song on SoundWave
+The main command to play a song on Soundwave, _optional_ arguments can be added
+
+
+#### Arguments:
+
+Supported arguments:
+```
+--song      Uses Youtube Music to search for the song instead of regular Youtube
+```
+Examples:
+```
+Default prefix is "=", replace with your server's prefix if applicable
+
+=play Alcohol Free          | Searches "Alcohol Free" using regular Youtube
+=play Alcohol Free --song   | Searches "Alcohol Free" using Youtube Music
+=play --song Alcohol Free   | Searches "Alcohol Free" using Youtube Music
+
+Arguments can be placed anywhere, and will be extracted.
+```
+- Spotify links will use YouTube Music to search for the equivalent.
 
 ### playdirect
 
@@ -283,6 +304,13 @@ chorus
 ```
 
 # Changelog
+
+### Soundwave v4.1.8
+
+- Unified Engine has been upgraded to v6
+- `fix` command has been depreciated
+- Max searchable songs inside a playlist has been increased to 1.5k
+- Permission checks has been updated
 
 ### Soundwave 4.0.0
 
