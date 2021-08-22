@@ -77,6 +77,8 @@ The main command to play a song on Soundwave, _optional_ arguments can be added
 Supported arguments:
 ```
 --song      Uses Youtube Music to search for the song instead of regular Youtube
+--override  Overrides the default setting for the detected input, useful when song doesn't
+            exist on the selected search mechanism. (Ex. Youtube Music)
 ```
 Examples:
 ```
@@ -86,9 +88,14 @@ Default prefix is "=", replace with your server's prefix if applicable
 =play Alcohol Free --song   | Searches "Alcohol Free" using Youtube Music
 =play --song Alcohol Free   | Searches "Alcohol Free" using Youtube Music
 
+The following will override the default search mechanism and use regular Youtube.
+
+=play https://open.spotify.com/track/04LlwbQp31hLQ6meYbP19t?si=29e99ecce3544978 --override
+
+
 Arguments can be placed anywhere, and will be extracted.
 ```
-- Spotify links will use YouTube Music to search for the equivalent.
+- Spotify links will use YouTube Music to search for the equivalent. This can be overridden with the `--override` flag
 
 ### playdirect
 
@@ -194,7 +201,7 @@ Shows and interface that can control the player
 
 `=volume [integer]`
 
-`aliases: volume, v, level`
+`aliases: volume, v, level, soundwave`
 
 Changes the volume of SoundWave
 
@@ -258,7 +265,7 @@ A link that you can invite SoundWave to another server
 
 `=lyrics [?querytext]`
 
-`aliases: lyrics, lyric`
+`aliases: lyrics, lyric, lyr`
 
 Searches for lyrics on the provided text, if none is provided then SoundWave will attempt to search from the current
 playing song
