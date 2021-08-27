@@ -308,6 +308,8 @@ echo
 reverb
 flanger
 chorus
+earrape
+shoppingmall
 ```
 
 # Changelog
