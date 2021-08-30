@@ -6,6 +6,7 @@
   <br />
   <p>
     <a href="https://discord.gg/d62ZWkVUet"><img src="https://img.shields.io/discord/860347110163873842?color=5865F2&label=Discord%20Server&logo=Discord&logoColor=white" alt="Discord server" /></a>
+    <a href="https://discord.com/api/oauth2/authorize?client_id=815565837200261131&permissions=2184309840&scope=bot%20applications.commands"><img src="https://img.shields.io/badge/Invite%20Soundwave-Discord-blue" alt="invite soundwave"></a>
     <a href="https://evasivexkiller.wixsite.com/website/donate"><img src="https://img.shields.io/badge/donate-website-F96854.svg" alt="donate" /></a>
   </p>
 </div>
