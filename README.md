@@ -77,26 +77,26 @@ The main command to play a song on Soundwave, _optional_ arguments can be added
 
 Supported arguments:
 ```
---song      Uses Youtube Music to search for the song instead of regular Youtube
---override  Overrides the default setting for the detected input, useful when song doesn't
-            exist on the selected search mechanism. (Ex. Youtube Music)
+-s, --song      Tries to get the music version of the song specified
+-o, --override  Overrides the default setting for the detected input, useful when song doesn't
+                exist on the selected search mechanism.
 ```
 Examples:
 ```
 Default prefix is "=", replace with your server's prefix if applicable
 
-=play Alcohol Free          | Searches "Alcohol Free" using regular Youtube
-=play Alcohol Free --song   | Searches "Alcohol Free" using Youtube Music
-=play --song Alcohol Free   | Searches "Alcohol Free" using Youtube Music
+=play Alcohol Free          | Searches "Alcohol Free" using default mechanism
+=play Alcohol Free --song   | Searches "Alcohol Free" and getting the song version of it
+=play --song Alcohol Free   | Searches "Alcohol Free" and getting the song version of it
 
-The following will override the default search mechanism and use regular Youtube.
+The following will override the default search mechanism
 
 =play https://open.spotify.com/track/04LlwbQp31hLQ6meYbP19t?si=29e99ecce3544978 --override
 
 
 Arguments can be placed anywhere, and will be extracted.
 ```
-- Spotify links will use YouTube Music to search for the equivalent. This can be overridden with the `--override` flag
+- Spotify links will try to get the music version of the song. This can be overridden with the `--override` flag
 
 ### playdirect
 
