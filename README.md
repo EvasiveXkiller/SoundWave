@@ -13,18 +13,12 @@
 
 ## Announcements
 
-SoundWave has successfully transitioned to Discord V9 API, there might be bugs so please do report if there is any.
+[Discord Server](https://discord.gg/d62ZWkVUet)
 
-For more info, join the [Discord Server](https://discord.gg/d62ZWkVUet)
-
-### SoundWave 4.2.0
-
-- `play` command can take arguments now. Check below for syntax errors.
-- `search` now identifies the correct user that requested the song
-
-Things that are fixed
-
-- Permission checks are now all modern (hopefully)
+### SoundWave v5
+- Spotify playlists now loads all songs
+- `jump` now maintains queue if `repeatqueue` is true
+- `jump` history now selects the correct song
 
 View more at [changelog](#changelog)
 
@@ -32,7 +26,7 @@ View more at [changelog](#changelog)
 
 All commands need to be prefixed with `=` or the prefix of the server
 
-- [play(NEW!)](#play)
+- [play](#play)
 - [playdirect](#playdirect)
 - [pause](#pause)
 - [resume](#resume)
@@ -315,6 +309,15 @@ shoppingmall
 
 # Changelog
 
+### SoundWave 4.2.0
+
+- `play` command can take arguments now. Check below for syntax errors.
+- `search` now identifies the correct user that requested the song
+
+Things that are fixed
+
+- Permission checks are now all modern (hopefully)
+
 ### Soundwave v4.1.8
 
 - Unified Engine has been upgraded to v6
@@ -354,10 +357,6 @@ Stuff that is fixed
 SoundWave Website: [here](https://evasivexkiller.wixsite.com/website/soundwave)
 
 [Top.gg](https://top.gg/bot/815565837200261131)
-
-[Discord List Space](https://discordlist.space/bot/815565837200261131)
-
-[Discord boats](https://discord.boats/bot/815565837200261131)
 
 <div>
 <a href="https://discordbotlist.com/bots/815565837200261131"><img src="https://discordbotlist.com/api/v1/bots/815565837200261131/widget" alt="discord list space"></a>
