@@ -229,7 +229,7 @@ Shows and interface that can control the player
 
 `aliases: volume, v, level, soundwave`
 
-Changes the volume of SoundWave
+Changes the volume of SoundWave. Volume range 0-200 can be accepted for best experience, however, volume beyond 200 can potentially cause serious physical human parts damage 
 
 ### seek
 
