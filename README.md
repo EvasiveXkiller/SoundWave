@@ -75,8 +75,8 @@ Supported arguments:
 | ------------ | ----------- | ----------------------------- | ------------------------------------------------------------ |
 | `--song`     | `-s`        | -                             | Tries to get the music version of the song specified         |
 | `--override` | `-o`        | -                             | Overrides the default setting for the detected input, useful when song doesn't exist on the selected search mechanism. |
-| `--volume`   | `-v`        | `Number`                      | Sets the volume of the song when reached, accepts any seconds or standard time code |
-| `--repeat`   | `-r`        | `track` OR `queue`            | Sets the volume of the song when reached, accepts any number |
+| `--volume`   | `-v`        | `Number`                      | Sets the volume of the song specified, accepts any seconds or standard time code |
+| `--repeat`   | `-r`        | `track` OR `queue`            | Sets the repeat mode of the player when the song is played. |
 | `--effect`   | `-e`        | Any valid [effects](#effects) | Sets the effect of the player when reached, accepts any valid effects. If used with a playlist link, only the first song will be applied |
 | `--startAt`  | -           | Any valid timecodes           | Begin the song at a certain time. If used with a playlist link, only the first song will be applied |
 
