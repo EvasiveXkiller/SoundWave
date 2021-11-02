@@ -15,10 +15,11 @@
 
 [Discord Server](https://discord.gg/d62ZWkVUet)
 
-### SoundWave v5
-- Spotify playlists now loads all songs
-- `jump` now maintains queue if `repeatqueue` is true
-- `jump` history now selects the correct song
+### SoundWave v5.1
+
+- Added new flags, check out help [play](#play) for more info.
+- Fixed `remove` command removing the current song in certain scenarios.
+- Added more effects, check out [effects](#effects) of more info.
 
 View more at [changelog](#changelog)
 
@@ -66,31 +67,61 @@ All commands need to be prefixed with `=` or the prefix of the server
 
 The main command to play a song on Soundwave, _optional_ arguments can be added
 
-
 #### Arguments:
 
 Supported arguments:
-```
--s, --song      Tries to get the music version of the song specified
--o, --override  Overrides the default setting for the detected input, useful when song doesn't
-                exist on the selected search mechanism.
-```
+
+|  Flags       | Short Flags | Accepted Values               | Description                                                  |
+| ------------ | ----------- | ----------------------------- | ------------------------------------------------------------ |
+| `--song`     | `-s`        | -                             | Tries to get the music version of the song specified         |
+| `--override` | `-o`        | -                             | Overrides the default setting for the detected input, useful when song doesn't exist on the selected search mechanism. |
+| `--volume`   | `-v`        | `Number`                      | Sets the volume of the song when reached, accepts any seconds or standard time code |
+| `--repeat`   | `-r`        | `track` OR `queue`            | Sets the volume of the song when reached, accepts any number |
+| `--effect`   | `-e`        | Any valid [effects](#effects) | Sets the effect of the player when reached, accepts any valid effects. If used with a playlist link, only the first song will be applied |
+| `--startAt`  | -           | Any valid timecodes           | Begin the song at a certain time. If used with a playlist link, only the first song will be applied |
+
 Examples:
+
+Default prefix is `=`, replace with your server's prefix if applicable
+
+- Searches "Alcohol Free" using default mechanism
+
 ```
-Default prefix is "=", replace with your server's prefix if applicable
-
-=play Alcohol Free          | Searches "Alcohol Free" using default mechanism
-=play Alcohol Free --song   | Searches "Alcohol Free" and getting the song version of it
-=play --song Alcohol Free   | Searches "Alcohol Free" and getting the song version of it
-
-The following will override the default search mechanism
-
-=play https://open.spotify.com/track/04LlwbQp31hLQ6meYbP19t?si=29e99ecce3544978 --override
-
-
-Arguments can be placed anywhere, and will be extracted.
+=play Alcohol Free
 ```
-- Spotify links will try to get the music version of the song. This can be overridden with the `--override` flag
+
+- Searches "Alcohol Free" and getting the song version of it
+
+```
+=play Alcohol Free --song
+```
+
+- Parses the Spotify link, and overrides the default search engine behavior as there is no music equivalent to it.
+
+```
+=play https://open.spotify.com/track/0BvJvYTy65XrWaVILKVenk?si=a9e6426f285a410c --override
+```
+
+This example:
+
+- Plays Alcohol free, while getting the song version of it
+- Applies `8d` effects,
+- Repeat the current track,
+- Begins the song at 1 minute and 35 seconds,
+- Sets the track volume at 130%.
+
+```
+=play Alcohol Free --song --effect 8d --repeat track --startAt 1:35 --volume 130
+```
+
+Things to note:
+
+- The position of arguments is not important. They will be extracted regardless of which comes first.
+- Songs with `-` might interfere with the extractor. To avoid this problem remove all `-` from the song name,
+- Spotify links will default to search for the music version. This might yield different results depending on the track
+  validity on different platforms. To ensure it gets the right track, use the `--overide` flag.
+- Arguments are persisted throughout the queue. This allows for simple logic programming of the bot by
+  utilizing [`move`](#move)
 
 ### playdirect
 
@@ -293,21 +324,29 @@ Side note: Using effects on live songs might cause out of sync issues.
 Currently supported effects:
 
 ```
-tremolo
-bassboost
-subboost
-8d
-vaporwave
-nightcore
-echo
-reverb
-flanger
-chorus
-earrape
+tremolo 
+bassboost 
+subboost 
+8d 
+vaporwave 
+nightcore 
+echo 
+reverb 
+flanger 
+chorus 
+earrape 
 shoppingmall
+outsideclub
+lofi
 ```
 
 # Changelog
+
+### SoundWave 5.0.0
+
+- Spotify playlists now loads all songs
+- `jump` now maintains queue if `repeatqueue` is true
+- `jump` history now selects the correct song
 
 ### SoundWave 4.2.0
 
